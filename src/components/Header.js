@@ -7,15 +7,20 @@ const Header = () => {
     return(
         
         <div className="ui secondary pointing menu">
-            <Link to="/" className="item">
-                Home
-            </Link>
+          <Link to="/" className="item">
+             Home
+          </Link>
+          <div className="right menu">
+          <Link to="/form" className="item">
+             Add Car
+          </Link>
           <div className="right menu">
             <Link to="/inventory" className="item">
                 Inventory
             </Link>
             <GoogleAuth />
           </div>
+         </div>
         </div>
         
     )
