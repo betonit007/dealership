@@ -18,7 +18,7 @@ const Header = () => {
             <Link to="/inventory" className="item">
                 Inventory
             </Link>
-            <GoogleAuth />
+            <GoogleAuth />it should be here
           </div>
          </div>
         </div>

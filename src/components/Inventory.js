@@ -27,7 +27,7 @@ class Inventory extends React.Component {
                   <Link to={`/edit/${car.id}`} className="ui button primary">
                     Edit   
                   </Link>
-                  <Link className="ui button negative">
+                  <Link to={`/delete/${car.id}`} className="ui button negative">
                       Delete
                   </Link>
               </div>
@@ -42,7 +42,9 @@ class Inventory extends React.Component {
                     {this.renderAdmin(car)}
                   <i className="large middle aligned icon car" />
                   <div className="content">
-                      {car.firstName}
+                      <Link to={`/cars/${car.id}`} className="header">
+                        {car.firstName}
+                      </Link>
                       <div className="description">{car.lastName}</div>
                 </div>
               </div>

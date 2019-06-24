@@ -41,8 +41,9 @@ export const editName = (id, formValues) => async dispatch => {
     history.push('/inventory');
 }
 
-export const deleteName = (id) => async dispatch => {
-    await cars.delete(`/streams${id}`);
+export const deleteCar = (id) => async dispatch => {
+    await cars.delete(`/cars/${id}`);
 
     dispatch ({ type: 'DELETE_CAR', payload: id});
+    history.push('/');
 }
